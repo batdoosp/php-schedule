@@ -17,7 +17,7 @@ type判定间隔执行或定点定时执行
 */1 * * * * curl http://localhost/xxx/schedule/ScriptCommon
 
 # 新增一条运行实例
-任务将以每分钟触发一次的频繁执行
+任务将以每分钟触发一次的频率执行
 
 INSERT INTO schedule_plan VALUES (NULL, 'myscriptindex', 1, '测试定时任务', 'http://localhost/xxx/schedule/MyScript/index', 1, '-1', -1, 1, -1, -1, 0, NOW(), NOW(), NULL, '');
 
